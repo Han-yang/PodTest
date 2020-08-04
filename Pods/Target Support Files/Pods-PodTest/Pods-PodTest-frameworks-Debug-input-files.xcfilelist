@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-PodTest/Pods-PodTest-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/basepod/basepod.framework
+${BUILT_PRODUCTS_DIR}/podDev01/podDev01.framework

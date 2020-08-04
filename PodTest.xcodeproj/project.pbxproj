@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,7 @@
 		B8FEB81F24D914CA003DBF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8FEB82424D914E0003DBF97 /* BaseTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTest.h; sourceTree = "<group>"; };
 		B8FEB82524D914E0003DBF97 /* BaseTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTest.m; sourceTree = "<group>"; };
-		B8FEB82824D91534003DBF97 /* basepod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = basepod.podspec; sourceTree = "<group>"; };
+		B8FEB82824D91534003DBF97 /* basepod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = basepod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6AC02683AC1B1B879F8E87C /* Pods-PodTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodTest.debug.xcconfig"; path = "Target Support Files/Pods-PodTest/Pods-PodTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +69,6 @@
 				C6AC02683AC1B1B879F8E87C /* Pods-PodTest.debug.xcconfig */,
 				0282ADA75A59713F5971C6FF /* Pods-PodTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
