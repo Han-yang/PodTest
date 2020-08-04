@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <podDev01/dev01.h>
+#import "dev01.h"
 @interface ViewController ()
 
 @end

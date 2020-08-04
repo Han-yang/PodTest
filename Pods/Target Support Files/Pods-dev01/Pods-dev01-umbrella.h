@@ -10,3 +10,7 @@
 #endif
 #endif
 
+
+FOUNDATION_EXPORT double Pods_dev01VersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_dev01VersionString[];
+

@@ -16,7 +16,7 @@
 @implementation Dev01Test
 +(void)test{
     [BaseTest test];
-    NSLog(@"%@++",self);
+    NSLog(@"%@+++_+",self);
     NSLog(@"%@",[AFNetworkReachabilityManager sharedManager]);
 }
 @end
