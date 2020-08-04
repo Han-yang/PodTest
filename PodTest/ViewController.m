@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import <podDev01-umbrella.h>
 @interface ViewController ()
 
 @end
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [Dev01Test test];
 }
 
 
