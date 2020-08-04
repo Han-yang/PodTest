@@ -12,6 +12,6 @@
 
 @implementation BaseTest
 +(void)test{
-    NSLog(@"%@",self);
+    NSLog(@"%@---",self);
 }
 @end

@@ -16,9 +16,12 @@ PODS:
     - AFNetworking/NSURLSession
   - basepod (0.1.0):
     - AFNetworking
+  - podDev01 (0.1.0):
+    - basepod
 
 DEPENDENCIES:
   - basepod (from `base`)
+  - podDev01 (from `./`)
 
 SPEC REPOS:
   trunk:
@@ -27,11 +30,14 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   basepod:
     :path: base
+  podDev01:
+    :path: "./"
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   basepod: 09e9dfc2db58f99dc595d6fbf557b1824fc3b43c
+  podDev01: d125bdac08a5a46f9bb5a69f4adade0a153c80af
 
-PODFILE CHECKSUM: e40b790bffe70fff740e1deb8070f8e5d3433890
+PODFILE CHECKSUM: 2ce24c5410813e6eb38a2273751fe990ac5a49af
 
 COCOAPODS: 1.9.3

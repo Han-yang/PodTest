@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		B8FEB82024D914CA003DBF97 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FEB81E24D914CA003DBF97 /* base.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8FEB82624D914E0003DBF97 /* BaseTest.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FEB82424D914E0003DBF97 /* BaseTest.h */; };
 		B8FEB82724D914E0003DBF97 /* BaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FEB82524D914E0003DBF97 /* BaseTest.m */; };
+		B8FEB83324D9174D003DBF97 /* dev01.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FEB83124D9174D003DBF97 /* dev01.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8FEB83924D91760003DBF97 /* Dev01Test.h in Headers */ = {isa = PBXBuildFile; fileRef = B8FEB83724D91760003DBF97 /* Dev01Test.h */; };
+		B8FEB83A24D91760003DBF97 /* Dev01Test.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FEB83824D91760003DBF97 /* Dev01Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +43,13 @@
 		B8FEB81F24D914CA003DBF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8FEB82424D914E0003DBF97 /* BaseTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTest.h; sourceTree = "<group>"; };
 		B8FEB82524D914E0003DBF97 /* BaseTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTest.m; sourceTree = "<group>"; };
-		B8FEB82824D91534003DBF97 /* basepod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = basepod.podspec; sourceTree = "<group>"; };
+		B8FEB82824D91534003DBF97 /* basepod.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = basepod.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B8FEB82F24D9174D003DBF97 /* dev01.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dev01.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FEB83124D9174D003DBF97 /* dev01.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dev01.h; sourceTree = "<group>"; };
+		B8FEB83224D9174D003DBF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FEB83724D91760003DBF97 /* Dev01Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dev01Test.h; sourceTree = "<group>"; };
+		B8FEB83824D91760003DBF97 /* Dev01Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dev01Test.m; sourceTree = "<group>"; };
+		B8FEB83B24D91798003DBF97 /* podDev01.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = podDev01.podspec; sourceTree = "<group>"; };
 		C6AC02683AC1B1B879F8E87C /* Pods-PodTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodTest.debug.xcconfig"; path = "Target Support Files/Pods-PodTest/Pods-PodTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8FEB82C24D9174D003DBF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,7 +85,6 @@
 				C6AC02683AC1B1B879F8E87C /* Pods-PodTest.debug.xcconfig */,
 				0282ADA75A59713F5971C6FF /* Pods-PodTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,8 +99,10 @@
 		B8FEB7F224D91030003DBF97 = {
 			isa = PBXGroup;
 			children = (
+				B8FEB83B24D91798003DBF97 /* podDev01.podspec */,
 				B8FEB7FD24D91030003DBF97 /* PodTest */,
 				B8FEB81D24D914CA003DBF97 /* base */,
+				B8FEB83024D9174D003DBF97 /* dev01 */,
 				B8FEB7FC24D91030003DBF97 /* Products */,
 				419D0F6BA9481A5D755336F0 /* Pods */,
 				9475B353DFB99E4FE1D0DCEA /* Frameworks */,
@@ -97,6 +114,7 @@
 			children = (
 				B8FEB7FB24D91030003DBF97 /* PodTest.app */,
 				B8FEB81C24D914C9003DBF97 /* base.framework */,
+				B8FEB82F24D9174D003DBF97 /* dev01.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +149,17 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		B8FEB83024D9174D003DBF97 /* dev01 */ = {
+			isa = PBXGroup;
+			children = (
+				B8FEB83124D9174D003DBF97 /* dev01.h */,
+				B8FEB83224D9174D003DBF97 /* Info.plist */,
+				B8FEB83724D91760003DBF97 /* Dev01Test.h */,
+				B8FEB83824D91760003DBF97 /* Dev01Test.m */,
+			);
+			path = dev01;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -140,6 +169,15 @@
 			files = (
 				B8FEB82024D914CA003DBF97 /* base.h in Headers */,
 				B8FEB82624D914E0003DBF97 /* BaseTest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEB82A24D9174D003DBF97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FEB83324D9174D003DBF97 /* dev01.h in Headers */,
+				B8FEB83924D91760003DBF97 /* Dev01Test.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +221,24 @@
 			productReference = B8FEB81C24D914C9003DBF97 /* base.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B8FEB82E24D9174D003DBF97 /* dev01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FEB83624D9174D003DBF97 /* Build configuration list for PBXNativeTarget "dev01" */;
+			buildPhases = (
+				B8FEB82A24D9174D003DBF97 /* Headers */,
+				B8FEB82B24D9174D003DBF97 /* Sources */,
+				B8FEB82C24D9174D003DBF97 /* Frameworks */,
+				B8FEB82D24D9174D003DBF97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dev01;
+			productName = dev01;
+			productReference = B8FEB82F24D9174D003DBF97 /* dev01.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +252,9 @@
 						CreatedOnToolsVersion = 11.3.1;
 					};
 					B8FEB81B24D914C9003DBF97 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					B8FEB82E24D9174D003DBF97 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -215,6 +274,7 @@
 			targets = (
 				B8FEB7FA24D91030003DBF97 /* PodTest */,
 				B8FEB81B24D914C9003DBF97 /* base */,
+				B8FEB82E24D9174D003DBF97 /* dev01 */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +291,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B8FEB81A24D914C9003DBF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEB82D24D9174D003DBF97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,6 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8FEB82724D914E0003DBF97 /* BaseTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FEB82B24D9174D003DBF97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FEB83A24D91760003DBF97 /* Dev01Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +596,58 @@
 			};
 			name = Release;
 		};
+		B8FEB83424D9174D003DBF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3W4XL8NW87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = dev01/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.security.dev01;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8FEB83524D9174D003DBF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3W4XL8NW87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = dev01/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.security.dev01;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +674,15 @@
 			buildConfigurations = (
 				B8FEB82224D914CA003DBF97 /* Debug */,
 				B8FEB82324D914CA003DBF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8FEB83624D9174D003DBF97 /* Build configuration list for PBXNativeTarget "dev01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FEB83424D9174D003DBF97 /* Debug */,
+				B8FEB83524D9174D003DBF97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

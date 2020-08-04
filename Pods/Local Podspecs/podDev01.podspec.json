@@ -1,0 +1,28 @@
+{
+  "name": "podDev01",
+  "version": "0.1.0",
+  "summary": "just for test",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Han-yang/PodTest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Han-yang": "han.yang@anker.com"
+  },
+  "source": {
+    "git": ""
+  },
+  "platforms": {
+    "ios": "10.2"
+  },
+  "source_files": "dev01/**/*.{h,m,swift}",
+  "swift_versions": "4.0",
+  "dependencies": {
+    "basepod": [
+
+    ]
+  },
+  "swift_version": "4.0"
+}

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseTest.h"
 
 //! Project version number for base.
 FOUNDATION_EXPORT double baseVersionNumber;
