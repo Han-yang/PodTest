@@ -1,0 +1,6 @@
+framework module basepod {
+  umbrella header "basepod-umbrella.h"
+
+  export *
+  module * { export * }
+}
